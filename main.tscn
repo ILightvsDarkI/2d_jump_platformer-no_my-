@@ -17,11 +17,27 @@ position = Vector2(165.5, 196.5)
 shape = SubResource("RectangleShape2D_h2yge")
 
 [node name="Icon" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(167, 197)
+position = Vector2(165.25, 197.75)
+scale = Vector2(0.894531, 0.855469)
 texture = ExtResource("2_h2yge")
 
 [node name="Node2D" parent="." instance=ExtResource("3_h2yge")]
 position = Vector2(68, 80)
 
-[node name="Node2D2" parent="." instance=ExtResource("3_h2yge")]
-position = Vector2(133, 80)
+[node name="Node2D" parent="Node2D" instance=ExtResource("3_h2yge")]
+position = Vector2(244, -85)
+
+[node name="Node2D2" parent="Node2D" instance=ExtResource("3_h2yge")]
+position = Vector2(309, -84)
+
+[node name="Node2D3" parent="Node2D" instance=ExtResource("3_h2yge")]
+position = Vector2(65, 0)
+
+[node name="Node2D4" parent="Node2D" instance=ExtResource("3_h2yge")]
+position = Vector2(489, -88)
+
+[node name="Node2D5" parent="Node2D" instance=ExtResource("3_h2yge")]
+position = Vector2(553, -153)
+
+[node name="Node2D6" parent="Node2D" instance=ExtResource("3_h2yge")]
+position = Vector2(-112, -110)
