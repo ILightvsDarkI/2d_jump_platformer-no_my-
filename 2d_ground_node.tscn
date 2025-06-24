@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cys7b6rdkhbgd"]
+
+[ext_resource type="Texture2D" uid="uid://cgsbeaj716771" path="res://game assets/M.E.GAmesTexturePack1.0/texture (5).png" id="1_3c03b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jrc2d"]
+size = Vector2(64, 64.5)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(77, 293)
+texture = ExtResource("1_3c03b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(77, 292.75)
+shape = SubResource("RectangleShape2D_jrc2d")
